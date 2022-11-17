@@ -55,7 +55,7 @@ mb = sender_decrypt(amb, sender_key);
 
 ### Step 4: receiver decrypts message
 
-Finally, the message comes back to the receiver (as a string representing a matrix) and receiver's key is used to produce the inverse of the original receiver encryption matrix which is left-multiplied with the encrypted message matrix. Now, the receiver encryption has been removed and the matrix is converted from matrix format back to original message string.
+Finally, the message comes back to the receiver (as a string representing a matrix) and receiver's key is used to produce the inverse of the original receiver encryption matrix which is left-multiplied with the encrypted message matrix. Now, the receiver encryption has been removed and the message is converted back from matrix to string.
 
 ```matlab
 mess_dec = receiver_decrypt(mb, receiver_key)
